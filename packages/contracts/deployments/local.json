@@ -1,0 +1,548 @@
+{
+  "generatedAt": "2026-10-16T10:58:20.954Z",
+  "chains": {
+    "base": {
+      "key": "base",
+      "name": "Base (local)",
+      "chainId": 31337,
+      "rpc": "http://127.0.0.1:8545",
+      "ccipSelector": "15971525489660198786",
+      "contracts": {
+        "USDC": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+        "SanctionsOracle": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+        "Timelock": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+        "NRX": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+        "NeroPSM": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+        "sNRX": "0x8A791620dd6260079BF849Dc5567aDC3F2FdC318",
+        "TokenPool": "0xB7f8BC63BbcaD18155201308C8f3540b07f84F5e",
+        "AutoSweeper": "0x9A9f2CCfdE556A7E9Ff0848998Aa4a0CFD8863AE",
+        "cbBTC": "0x68B1D87F95878fE05B998F19b66F4baba5De1aed",
+        "wstETH": "0x3Aa5ebB10DC797CAC828524e59A333d0A371443c",
+        "Morpho": "0xc6e7DF5E7b4f2A278906862b61205850344D4e7d",
+        "Irm": "0x59b670e9fA9D0A427751Af201D676719a970857b",
+        "OracleCbBTC": "0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1",
+        "OracleWstETH": "0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44",
+        "MorphoLenderStrategy": "0x7a2088a1bFc9d81c55368AE168C2C02570cB814F",
+        "AerodromePool": "0xE6E340D132b5f46d1e472DebcD681B2aBc16e57E",
+        "IdentityRegistry": "0xc3e53F4d16Ae77Db1c982e75a937B9f60FE63690",
+        "ReputationRegistry": "0x84eA74d481Ee0A5332c457a4d796187F6Ba67fEB",
+        "SellerBond": "0x9E545E3C0baAB3E08CdfD552C960A1050f373042",
+        "NeroJobs": "0xa82fF9aFd8f496c3d6ac40E2a0F282E47488CFc9",
+        "AgentSale": "0xf5059a5D33d5853360D16C683c16e67980206f36"
+      },
+      "markets": {
+        "cbBTC": {
+          "loanToken": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+          "collateralToken": "0x68B1D87F95878fE05B998F19b66F4baba5De1aed",
+          "oracle": "0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1",
+          "irm": "0x59b670e9fA9D0A427751Af201D676719a970857b",
+          "lltv": "770000000000000000",
+          "id": "0x61bd55224c89989b9adf65c1bd58d066338fc098d3a9071aec0f2376c1638a5b"
+        },
+        "wstETH": {
+          "loanToken": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+          "collateralToken": "0x3Aa5ebB10DC797CAC828524e59A333d0A371443c",
+          "oracle": "0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44",
+          "irm": "0x59b670e9fA9D0A427751Af201D676719a970857b",
+          "lltv": "860000000000000000",
+          "id": "0x00ec82e9b3bab0a78bfa3b67c5df4e859f9054c32203765a4314eb74c0cd96ae"
+        }
+      }
+    },
+    "ethereum": {
+      "key": "ethereum",
+      "name": "Ethereum (local)",
+      "chainId": 31338,
+      "rpc": "http://127.0.0.1:8546",
+      "ccipSelector": "5009297550715157269",
+      "contracts": {
+        "USDC": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+        "SanctionsOracle": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+        "Timelock": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+        "NRX": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+        "NeroPSM": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+        "sNRX": "0x8A791620dd6260079BF849Dc5567aDC3F2FdC318",
+        "TokenPool": "0xB7f8BC63BbcaD18155201308C8f3540b07f84F5e",
+        "AutoSweeper": "0x9A9f2CCfdE556A7E9Ff0848998Aa4a0CFD8863AE"
+      },
+      "markets": {}
+    }
+  },
+  "accounts": {
+    "deployer": {
+      "index": 0,
+      "address": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+    },
+    "guardian": {
+      "index": 1,
+      "address": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+    },
+    "don1": {
+      "index": 2,
+      "address": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+    },
+    "don2": {
+      "index": 3,
+      "address": "0x90F79bf6EB2c4f870365E785982E1f101E93b906"
+    },
+    "don3": {
+      "index": 4,
+      "address": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65"
+    },
+    "facilitator": {
+      "index": 5,
+      "address": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc"
+    },
+    "keeper": {
+      "index": 6,
+      "address": "0x976EA74026E726554dB657fA54763abd0C3a0aa9"
+    },
+    "alice": {
+      "index": 7,
+      "address": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955"
+    },
+    "bob": {
+      "index": 8,
+      "address": "0x23618e81E3f5cdF7f54C3d65f7FBc0aBf5B21E8f"
+    },
+    "carol": {
+      "index": 9,
+      "address": "0xa0Ee7A142d267C1f36714E4a8F75612F20a79720"
+    },
+    "mallory": {
+      "index": 10,
+      "address": "0xBcd4042DE499D14e55001CcbB24a551F3b954096"
+    },
+    "eval1": {
+      "index": 11,
+      "address": "0x71bE63f3384f5fb98995898A86B02Fb2426c5788"
+    },
+    "eval2": {
+      "index": 12,
+      "address": "0xFABB0ac9d68B0B445fB7357272Ff202C5651694a"
+    },
+    "eval3": {
+      "index": 13,
+      "address": "0x1CBd3b2770909D4e10f157cABC84C7264073C9Ec"
+    },
+    "contractEvaluator": {
+      "index": 14,
+      "address": "0xdF3e18d64BC6A983f673Ab319CCaE4f1a57C7097"
+    },
+    "owner0": {
+      "index": 15,
+      "address": "0xcd3B766CCDd6AE721141F452C550Ca635964ce71"
+    },
+    "owner1": {
+      "index": 16,
+      "address": "0x2546BcD3c84621e976D8185a91A922aE77ECEc30"
+    },
+    "owner2": {
+      "index": 17,
+      "address": "0xbDA5747bFD65F08deb54cb465eB87D40e51B197E"
+    },
+    "owner3": {
+      "index": 18,
+      "address": "0xdD2FD4581271e230360230F9337D5c0430Bf44C0"
+    },
+    "botLp": {
+      "index": 19,
+      "address": "0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199"
+    }
+  },
+  "agents": [
+    {
+      "slug": "weather-oracle",
+      "name": "Weather Oracle",
+      "category": "data",
+      "owner": "0xcd3B766CCDd6AE721141F452C550Ca635964ce71",
+      "skills": [
+        "weather",
+        "forecast",
+        "geo"
+      ],
+      "price": "0.002",
+      "description": "Current conditions and 3-day forecast for any city or lat/long.",
+      "jobs": [],
+      "input": "city",
+      "agentId": 1
+    },
+    {
+      "slug": "fx-rates",
+      "name": "FX Rates",
+      "category": "data",
+      "owner": "0xcd3B766CCDd6AE721141F452C550Ca635964ce71",
+      "skills": [
+        "fx",
+        "currency",
+        "rates"
+      ],
+      "price": "0.001",
+      "description": "Mid-market FX rates for 40 fiat pairs, refreshed every minute.",
+      "jobs": [],
+      "input": "pair",
+      "agentId": 2
+    },
+    {
+      "slug": "onchain-analytics",
+      "name": "Onchain Analytics",
+      "category": "data",
+      "owner": "0x2546BcD3c84621e976D8185a91A922aE77ECEc30",
+      "skills": [
+        "onchain",
+        "wallets",
+        "defi"
+      ],
+      "price": "0.01",
+      "description": "Wallet profiles, token flows and protocol TVL across EVM chains.",
+      "jobs": [
+        {
+          "title": "Wallet cohort report",
+          "budget": "35",
+          "hours": 24
+        }
+      ],
+      "input": "address",
+      "forSale": "1800",
+      "agentId": 3
+    },
+    {
+      "slug": "company-filings",
+      "name": "Company Filings",
+      "category": "data",
+      "owner": "0x2546BcD3c84621e976D8185a91A922aE77ECEc30",
+      "skills": [
+        "filings",
+        "sec",
+        "companies"
+      ],
+      "price": "0.02",
+      "description": "Structured extracts from public company filings: revenue, segments, risks.",
+      "jobs": [],
+      "input": "ticker",
+      "agentId": 4
+    },
+    {
+      "slug": "geo-lookup",
+      "name": "Geo Lookup",
+      "category": "data",
+      "owner": "0xbDA5747bFD65F08deb54cb465eB87D40e51B197E",
+      "skills": [
+        "geocoding",
+        "maps",
+        "address"
+      ],
+      "price": "0.001",
+      "description": "Forward and reverse geocoding with timezone and country codes.",
+      "jobs": [],
+      "input": "query",
+      "agentId": 5
+    },
+    {
+      "slug": "deep-research",
+      "name": "Deep Research",
+      "category": "research",
+      "owner": "0xbDA5747bFD65F08deb54cb465eB87D40e51B197E",
+      "skills": [
+        "research",
+        "citations",
+        "reports"
+      ],
+      "price": "0.25",
+      "description": "Multi-source research briefs with citations, in minutes.",
+      "jobs": [
+        {
+          "title": "Market landscape report",
+          "budget": "40",
+          "hours": 24
+        },
+        {
+          "title": "Competitor teardown",
+          "budget": "120",
+          "hours": 48
+        }
+      ],
+      "input": "question",
+      "agentId": 6
+    },
+    {
+      "slug": "market-scan",
+      "name": "Market Scan",
+      "category": "research",
+      "owner": "0xdD2FD4581271e230360230F9337D5c0430Bf44C0",
+      "skills": [
+        "markets",
+        "pricing",
+        "competitors"
+      ],
+      "price": "0.05",
+      "description": "Pricing and positioning scan of named competitors.",
+      "jobs": [],
+      "input": "company",
+      "agentId": 7
+    },
+    {
+      "slug": "patent-search",
+      "name": "Patent Search",
+      "category": "research",
+      "owner": "0xdD2FD4581271e230360230F9337D5c0430Bf44C0",
+      "skills": [
+        "patents",
+        "prior-art",
+        "ip"
+      ],
+      "price": "0.08",
+      "description": "Prior-art search across public patent databases.",
+      "jobs": [
+        {
+          "title": "Prior-art memo",
+          "budget": "90",
+          "hours": 72
+        }
+      ],
+      "input": "invention",
+      "agentId": 8
+    },
+    {
+      "slug": "lit-review",
+      "name": "Lit Review",
+      "category": "research",
+      "owner": "0xcd3B766CCDd6AE721141F452C550Ca635964ce71",
+      "skills": [
+        "papers",
+        "literature",
+        "summaries"
+      ],
+      "price": "0.1",
+      "description": "Literature review of recent papers on a topic, with key findings.",
+      "jobs": [
+        {
+          "title": "Literature review (20 papers)",
+          "budget": "60",
+          "hours": 48
+        }
+      ],
+      "input": "topic",
+      "agentId": 9
+    },
+    {
+      "slug": "news-digest",
+      "name": "News Digest",
+      "category": "research",
+      "owner": "0x2546BcD3c84621e976D8185a91A922aE77ECEc30",
+      "skills": [
+        "news",
+        "digest",
+        "monitoring"
+      ],
+      "price": "0.02",
+      "description": "Daily digest of news on a company, person or topic.",
+      "jobs": [],
+      "input": "topic",
+      "forSale": "650",
+      "agentId": 10
+    },
+    {
+      "slug": "solidity-auditor",
+      "name": "Solidity Auditor",
+      "category": "code review",
+      "owner": "0xbDA5747bFD65F08deb54cb465eB87D40e51B197E",
+      "skills": [
+        "solidity",
+        "security",
+        "audit"
+      ],
+      "price": "0.5",
+      "description": "Automated and reviewed security audit of Solidity contracts.",
+      "jobs": [
+        {
+          "title": "Audit this contract",
+          "budget": "250",
+          "hours": 48
+        },
+        {
+          "title": "Protocol audit (up to 2k SLOC)",
+          "budget": "900",
+          "hours": 120
+        }
+      ],
+      "input": "source",
+      "agentId": 11
+    },
+    {
+      "slug": "ts-linter",
+      "name": "TS Linter",
+      "category": "code review",
+      "owner": "0xdD2FD4581271e230360230F9337D5c0430Bf44C0",
+      "skills": [
+        "typescript",
+        "lint",
+        "style"
+      ],
+      "price": "0.01",
+      "description": "Strict TypeScript lint with fix suggestions.",
+      "jobs": [],
+      "input": "source",
+      "agentId": 12
+    },
+    {
+      "slug": "pr-reviewer",
+      "name": "PR Reviewer",
+      "category": "code review",
+      "owner": "0xcd3B766CCDd6AE721141F452C550Ca635964ce71",
+      "skills": [
+        "code-review",
+        "github",
+        "diff"
+      ],
+      "price": "0.15",
+      "description": "Line-by-line review of a pull request diff.",
+      "jobs": [
+        {
+          "title": "Review a pull request",
+          "budget": "30",
+          "hours": 24
+        }
+      ],
+      "input": "diff",
+      "agentId": 13
+    },
+    {
+      "slug": "gas-optimizer",
+      "name": "Gas Optimizer",
+      "category": "code review",
+      "owner": "0x2546BcD3c84621e976D8185a91A922aE77ECEc30",
+      "skills": [
+        "solidity",
+        "gas",
+        "evm"
+      ],
+      "price": "0.2",
+      "description": "Finds gas savings in Solidity with before/after estimates.",
+      "jobs": [
+        {
+          "title": "Gas optimisation pass",
+          "budget": "80",
+          "hours": 48
+        }
+      ],
+      "input": "source",
+      "forSale": "2400",
+      "agentId": 14
+    },
+    {
+      "slug": "test-writer",
+      "name": "Test Writer",
+      "category": "code review",
+      "owner": "0xbDA5747bFD65F08deb54cb465eB87D40e51B197E",
+      "skills": [
+        "testing",
+        "coverage",
+        "foundry"
+      ],
+      "price": "0.1",
+      "description": "Generates unit and fuzz tests to raise coverage.",
+      "jobs": [
+        {
+          "title": "Write a test suite",
+          "budget": "45",
+          "hours": 48
+        }
+      ],
+      "input": "source",
+      "agentId": 15
+    },
+    {
+      "slug": "translator",
+      "name": "Translator",
+      "category": "content",
+      "owner": "0xdD2FD4581271e230360230F9337D5c0430Bf44C0",
+      "skills": [
+        "translation",
+        "localisation",
+        "languages"
+      ],
+      "price": "0.005",
+      "description": "Translation between 60 languages, tone-preserving.",
+      "jobs": [],
+      "input": "text",
+      "agentId": 16
+    },
+    {
+      "slug": "summarizer",
+      "name": "Summarizer",
+      "category": "content",
+      "owner": "0xcd3B766CCDd6AE721141F452C550Ca635964ce71",
+      "skills": [
+        "summaries",
+        "tldr",
+        "documents"
+      ],
+      "price": "0.004",
+      "description": "Summaries of long documents at a chosen length.",
+      "jobs": [],
+      "input": "text",
+      "agentId": 17
+    },
+    {
+      "slug": "copy-editor",
+      "name": "Copy Editor",
+      "category": "content",
+      "owner": "0x2546BcD3c84621e976D8185a91A922aE77ECEc30",
+      "skills": [
+        "editing",
+        "grammar",
+        "style"
+      ],
+      "price": "0.03",
+      "description": "Edits copy for clarity, grammar and house style.",
+      "jobs": [
+        {
+          "title": "Edit a long-form article",
+          "budget": "20",
+          "hours": 24
+        }
+      ],
+      "input": "text",
+      "agentId": 18
+    },
+    {
+      "slug": "alt-text",
+      "name": "Alt Text",
+      "category": "content",
+      "owner": "0xbDA5747bFD65F08deb54cb465eB87D40e51B197E",
+      "skills": [
+        "accessibility",
+        "images",
+        "captions"
+      ],
+      "price": "0.002",
+      "description": "Accessible alt text and captions for image URLs.",
+      "jobs": [],
+      "input": "imageUrl",
+      "agentId": 19
+    },
+    {
+      "slug": "seo-brief",
+      "name": "SEO Brief",
+      "category": "content",
+      "owner": "0xdD2FD4581271e230360230F9337D5c0430Bf44C0",
+      "skills": [
+        "seo",
+        "keywords",
+        "briefs"
+      ],
+      "price": "0.05",
+      "description": "Keyword research and content briefs for a target query.",
+      "jobs": [
+        {
+          "title": "Content brief pack (5 briefs)",
+          "budget": "15",
+          "hours": 24
+        }
+      ],
+      "input": "query",
+      "agentId": 20
+    }
+  ]
+}

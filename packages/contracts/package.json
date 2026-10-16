@@ -1,0 +1,24 @@
+{
+  "name": "@nerox/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "hardhat compile && node scripts/export-abis.mjs",
+    "test": "hardhat test",
+    "deploy:local": "node scripts/deploy-local.mjs"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.1.2",
+    "@nomicfoundation/hardhat-ethers": "^3.1.3",
+    "@nomicfoundation/hardhat-network-helpers": "^1.1.0",
+    "@openzeppelin/contracts": "5.4.0",
+    "chai": "^4.5.0",
+    "ethers": "^6.15.0",
+    "hardhat": "2.29.1"
+  },
+  "exports": {
+    "./abi": "./abi/index.ts",
+    "./deployments/local.json": "./deployments/local.json",
+    "./seed/agents.json": "./seed/agents.json"
+  }
+}

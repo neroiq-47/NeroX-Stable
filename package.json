@@ -1,0 +1,12 @@
+{
+  "name": "nerox",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "build:contracts": "npm -w @nerox/contracts run build",
+    "test": "npm -w @nerox/contracts test && npm -w @nerox/x402 test",
+    "demo": "node scripts/demo.mjs",
+    "dev:web": "npm -w @nerox/web run dev"
+  }
+}

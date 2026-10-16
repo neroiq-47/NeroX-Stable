@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+dist
+artifacts
+cache
+typechain-types
+coverage
+.env
+*.log
+.demo
+packages/services/data
+apps/web/next-env.d.ts
+*.tsbuildinfo
