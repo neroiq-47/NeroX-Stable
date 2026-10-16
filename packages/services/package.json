@@ -1,0 +1,20 @@
+{
+  "name": "@nerox/services",
+  "version": "0.1.0",
+  "private": true,
+  "description": "NeroX off-chain services: x402 facilitator + seller console API, agents host, CCIP relayer, market indexer/API (A2A + MCP), keeper.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "facilitator": "node src/index.js facilitator",
+    "agents": "node src/index.js agents",
+    "relayer": "node src/index.js relayer",
+    "market": "node src/index.js market"
+  },
+  "dependencies": {
+    "@nerox/x402": "0.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "viem": "^2.37.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@nerox/x402",
+  "version": "0.1.0",
+  "private": true,
+  "description": "x402 v1 + v2 'exact' scheme for NRX (EIP-3009): challenges, client signing, server middleware, facilitator verification.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./src/client.js",
+    "./server": "./src/server.js",
+    "./verify": "./src/verify.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "viem": "^2.37.0"
+  }
+}

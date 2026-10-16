@@ -1,0 +1,27 @@
+{
+  "name": "@nerox/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@nerox/x402": "0.1.0",
+    "@tanstack/react-query": "5.104.3",
+    "@wagmi/core": "2.22.1",
+    "next": "15.5.28",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "viem": "^2.37.0",
+    "wagmi": "2.19.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.9.2"
+  }
+}
